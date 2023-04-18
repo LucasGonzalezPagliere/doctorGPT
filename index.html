@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>DocGPT!</title>
+</head>
+<body>
+    <div class="container">
+        <div class="input-section">
+            <h1>Input Patient Information</h1>
+         
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" placeholder="Age in years">
+            
+            <label for="weight">Weight:</label>
+            <input type="number" id="weight" name="weight" placeholder="Weight in kg">
+            
+            <label for="sex">Sex:</label>
+            <select id="sex" name="sex">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+            
+            <label for="height">Height:</label>
+            <input type="number" id="height" name="height" placeholder="Height in cm">
+            
+            <label for="hr">Heart Rate:</label>
+            <input type="number" id="hr" name="hr" placeholder="Heart rate in BPM">
+            
+            
+            <label for="bloodPressure">Blood Pressure:</label>
+            <input type="text" id="bloodPressure" name="bloodPressure" placeholder="e.g. 120/80">
+
+            <label for="bodyTemperature">Body Temperature:</label>
+            <input type="number" id="bodyTemperature" name="bodyTemperature" step="0.1" placeholder="Temperature in °C">
+
+            <label for="respiratoryRate">Respiratory Rate:</label>
+            <input type="number" id="respiratoryRate" name="respiratoryRate" placeholder="Breaths per minute">
+
+            <label for="oxygenSaturation">Oxygen Saturation (SpO2):</label>
+            <input type="number" id="oxygenSaturation" name="oxygenSaturation" placeholder="SpO2 in %">
+
+            <label for="painLevel">Pain Level (1-10):</label>
+            <input type="number" id="painLevel" name="painLevel" min="1" max="10" placeholder="Pain level 1 - 10">
+
+            <label for="allergies">Allergies:</label>
+            <textarea id="allergies" name="allergies" rows="3" placeholder="List any known allergies"></textarea>
+
+            <label for="medications">Medications:</label>
+            <textarea id="medications" name="medications" rows="3" placeholder="List current or recent medications"></textarea>
+
+            <label for="pastMedicalHistory">Past Medical History:</label>
+            <textarea id="pastMedicalHistory" name="pastMedicalHistory" rows="3" placeholder="List pre-existing conditions"></textarea>
+
+            <label for="familyMedicalHistory">Family Medical History:</label>
+            <textarea id="familyMedicalHistory" name="familyMedicalHistory" rows="3" placeholder="List relevant family history"></textarea>
+
+            <label for="socialHistory">Social History:</label>
+            <textarea id="socialHistory" name="socialHistory" rows="3" placeholder="List relevant social history (smoking, alcohol, substance use)"></textarea>
+
+            <label for="immunizations">Immunizations:</label>
+            <textarea id="immunizations" name="immunizations" rows="3" placeholder="List relevant immunizations"></textarea>
+
+            <label for="chiefComplaint">Chief Complaint:</label>
+            <textarea id="chiefComplaint" name="chiefComplaint" rows="3" placeholder="Describe the main reason for seeking medical attention"></textarea>
+
+            <label for="symptoms">Symptoms:</label>
+            <textarea id="symptoms" name="symptoms" rows="3" placeholder="List any related or unrelated symptoms"></textarea>
+
+            <button id="submit" type="button">Get Second Opinion</button>
+        </div>
+        <div class="output-section">
+            <h1>Second Opinion</h1>
+            <div class="output-content">
+                <!-- The second opinion will be displayed here -->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
